@@ -1,0 +1,85 @@
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.container3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("assets/color4.jpg");
+    flex-direction: row;
+    border-radius: 40px;
+
+}
+.container4 { 
+    display: flex;
+    flex-direction: row;
+}
+.container5 {
+    display: flex;
+    flex-direction: row;
+}
+h5 {
+    font-size: 20px;
+    font-family: 'Trebuchet MS';
+}
+main {
+    font-family: 'Trebuchet MS';
+    font-size: 20px;
+}
+.container6 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 20px;
+}
+.footer-text {
+    font-family: 'Trebuchet MS';
+    margin-left: 550px;
+    margin-right: 20px;
+
+}
+.footer-icon {
+    width: auto;
+    height: 20px;
+}
+.con1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.main-icon {
+    width: auto;
+    height: 350px;
+}
+.con2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.btn {
+    width: 90px;
+    height: 35px;
+    /* margin-left: 90px; */
+    font-family: 'Trebuchet MS';
+    text-align: center;
+    background-image: url("assets/color1.jpg");
+    background-size: 150px 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
