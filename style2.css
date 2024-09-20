@@ -1,0 +1,83 @@
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.container3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-image: url("assets/color4.jpg");
+    border-radius: 40px;
+}
+.container4 { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container5 {
+    display: flex;
+    flex-direction: row;
+}
+h5 {
+    font-size: 20px;
+    font-family: 'Trebuchet MS';
+}
+main {
+    font-family: 'Trebuchet MS';
+    font-size: 20px;
+}
+.container6 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.footer-text {
+    font-family: 'Trebuchet MS';
+    margin-left: 550px;
+    margin-right: 20px;
+
+}
+.footer-icon {
+
+    width: auto;
+    height: 20px;
+}
+.main-icon {
+    width: auto;
+    height: 50px;
+    margin-top: 10px;
+}
+.container7 { 
+    display: flex;
+    flex-direction: row;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+th, td {
+    border: 1px solid #aaa;
+    padding: 8px;
+}
+th {
+    background-color: #D9D3EC;
+}
+th {
+    text-align: left;
+}
+td:nth-child(2) {
+    padding-left: 20px;
+}
+.con1 {
+    display: flex;
+    flex-direction: column;
+}
