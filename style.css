@@ -1,3 +1,8 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+  }
 a, a:link, a:visited  {
     text-decoration: none;
 }
@@ -13,12 +18,14 @@ a, a:link, a:visited  {
     flex-direction: column;
 }
 .container3 {
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
     background-image: url("assets/color4.jpg");
     border-radius: 40px;
+    height: 80px;
 }
 h5:hover {
     color: white;
@@ -52,10 +59,12 @@ aside {
     font-family: 'Trebuchet MS'; 
     padding-left: 20px; 
     width: 150px;
-    height: 180px;
+    height: 130px;
     border: 1px solid #bf7fdb;
     padding-right: 10px;
     border-radius: 20px;
+    padding-top: 10px;
+    margin-left: 5px;
 }
 main {
     font-family: 'Trebuchet MS';
@@ -83,3 +92,6 @@ main {
     margin-top: 10px;
 }
 
+aside p{
+    padding-bottom: 5px;
+}
