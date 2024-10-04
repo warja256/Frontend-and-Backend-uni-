@@ -95,3 +95,10 @@ main {
 aside p{
     padding-bottom: 5px;
 }
+.foot-padding {
+    margin-top: 5px;
+}
+
+main h4 {
+    padding-bottom: 10px;
+}

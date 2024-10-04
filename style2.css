@@ -113,3 +113,7 @@ td:nth-child(2) {
 aside p{
     padding-bottom: 8px;
 }
+main h3, h5 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
