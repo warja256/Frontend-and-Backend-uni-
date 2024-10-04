@@ -1,7 +1,9 @@
+a, a:link, a:visited  {
+    text-decoration: none;
+}
 body {
     font-family: 'Trebuchet MS';
 }
-
 .container1 {
     display: flex;
     align-items: center;
@@ -20,6 +22,22 @@ body {
     background-image: url("assets/color4.jpg");
     flex-direction: row;
     border-radius: 40px;
+}
+h5:hover {
+    color: white;
+}
+h5:active {
+    color: darkred; 
+}
+aside {
+    font-size: 20px; 
+    font-family: 'Trebuchet MS'; 
+    padding-left: 20px; 
+    width: 150px;
+    height: 180px;
+    border: 1px solid #bf7fdb;
+    padding-right: 10px;
+    border-radius: 20px;
 }
 .container4 {
     display: flex;
@@ -61,6 +79,12 @@ main {
 .main-icon {
     width: auto;
     height: 350px;
+    transition: transform 1s;
+}
+.main-icon:hover {
+    border: 1px solid #c272a5;
+    border-radius: 180px;
+    box-shadow: 2px 1px 5px #bf8db7;
 }
 .con2 {
     display: flex;
@@ -81,6 +105,11 @@ main {
     border: 0px;
     font-size: 18px;
 }
+.btn:hover {
+    font-size: 22px;
+    background-image: url("assets/color4.jpg");
+}
+
 .item {
     display: flex;
     flex-direction: column;
