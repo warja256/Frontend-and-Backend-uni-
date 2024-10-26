@@ -86,15 +86,39 @@ main {
     justify-content: space-between;
     flex-direction: row;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-between;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.between-rows {
+    margin-top: 20px;
+}
+main button {
+    margin-top: 3px;
+}
+main p {
+    margin-top: 10px;
+}
 .main-icon {
     width: auto;
     height: 350px;
     transition: transform 1s;
+    padding: 1px;
 }
+
 .main-icon:hover {
     border: 1px solid #c272a5;
     border-radius: 180px;
     box-shadow: 2px 1px 5px #bf8db7;
+    padding: 0px;
 }
 .con2 {
     display: flex;
@@ -120,11 +144,7 @@ main {
     background-image: url("assets/color4.jpg");
 }
 
-.item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 .modal {
     display: none; /* Скрываем модальное окно по умолчанию */
     position: fixed;
