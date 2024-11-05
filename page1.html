@@ -4,62 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Практика</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-    <header class="site-header">
+    <header id="site-header" class="site-header">
         <div class="container1">
-            <div>
-                <img src="assets/logo.jpeg" style="width: 120px; height: auto;" alt="small cat in white">
-                <h5 style="font-size: 20px; margin-left: 30px; margin-top: 0px; font-family: 'Trebuchet MS'">Logo</h5>
+            <div class="img-logo">
+                <img src="assets/logo.jpeg" alt="small cat in white">
+                <p>Logo</p>
             </div>
             <div class="container2">
-                <h5 style="text-align: right; font-size: 20px;font-family: 'Trebuchet MS'; margin-right: 20px;margin-top: 20px;margin-bottom: 0px;border-bottom-width: 13px;">Группа ЭФБО-01-23</h5>
-                <h5 style="text-align: right; font-size: 20px; font-family: 'Trebuchet MS'; margin-right: 20px;">Кушаева Варвара Антоновна</h5>
+                <p>Группа ЭФБО-01-23</p>
+                <p>Кушаева Варвара Антоновна</p>
             </div>
         </div>
         <div class="container3">
-            <h5 style="margin-left: 40px;" class="hover">Главная</h5>
+            <h5 class="hover navig margin-nav1">Главная</h5>
             <a href="page3.html">
-                <h5>Первый семестр</h5> 
+                <h5 class="navig">Первый семестр</h5> 
             </a> 
-            <h5>Второй семестр</h5> 
+            <h5 class="navig">Второй семестр</h5> 
             <a href="page2.html">
-                <h5>Услуги</h5> 
+                <h5 class="navig">Услуги</h5> 
             </a>
         
-            <h5 style="margin-right: 40px;">Авторизация</h5> 
+            <h5 class="navig margin-nav2">Авторизация</h5> 
         </div>
     </header>
     <div class="container4" style="margin-top: 20px;">
         <aside>
-            <p style="font-weight: bold; padding-bottom: 10px;">Навигация по&nbsp;странице</p>
-            <p >Фронтенд</p>
-            <p >Бэкенд</p>
+            <p id="navigation" class="navigation">Навигация по&nbsp;странице</p>
+            <div class="option">
+                <a href="#frontend">
+                    <p >Фронтенд</p>
+                </a>
+                <a href="#backend">
+                    <p >Бэкенд</p>
+                </a>
+            </div>
         </aside>
     
-        <main style="padding-left: 60px;">
-            <h1 style="font-family: 'Trebuchet MS'; padding-left: 120px;">Добро пожаловать на мой сайт</h1>
-            <div class="container5" style="padding-right: 150px;">
-                <p style="font-size: 20px; font-family: 'Trebuchet MS'; padding-top: 65px; padding-bottom: 20px; padding-left: 120px;">Меня зовут Кушаева Варвара Антоновна и я начинающий специалист по веб-разработке</p>
+        <main>
+            <h1>Добро пожаловать на мой сайт</h1>
+            <div class="container5">
+                <p class="about-me">Меня зовут Кушаева Варвара Антоновна и я&nbsp;начинающий специалист по&nbsp;<nobr>веб-разработке</nobr></p>
                 <img src="assets/pfp.png" class="image_pfp" alt="black cat">
             </div>
-            <h4>Фронтенд</h4>
-            <p>Фронтенд (или клиентская часть) — это то, что видит пользователь. Он включает в себя все визуальные элементы веб-сайта или приложения: кнопки, формы, изображения и текст. Фронтенд разработчики используют языки разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы создавать интерактивные и привлекательные интерфейсы. Основная задача фронтенда - обеспечить удобство использования и эстетическую привлекательность.</p>
-            <video width="350" height="240" controls>
-                <source src="assets/video/video1.mp4" type="video/mp4">
-                Video not supported
-            </video>
-            <h4>Бэкенд</h4>
-            <p>Бэкенд (или серверная часть). это "за кулисами" веб-приложения. Он отвечает за обработку данных, управление пользователями и взаимодействие с базами данных. Бэкенд разработчики используют языки программирования, такие как Python, Ruby, Java или РНР, а также фреймворки и базы данных для создания логики приложения. Основная задача бэкенда - обеспечить стабильную работу приложения и безопасность данных.</p>
-            <video width="350" height="240" controls>
-                <source src="assets/video/video2.mp4" type="video/mp4">
-                Video not supported
-            </video>
-            <br>
+            <div class="main-info">
+                <h4 id="frontend">Фронтенд</h4>
+                <p class="text-main">Фронтенд (или клиентская часть) — это то, что видит пользователь. Он включает в себя все визуальные элементы веб-сайта или приложения: кнопки, формы, изображения и текст. Фронтенд разработчики используют языки разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы создавать интерактивные и привлекательные интерфейсы. Основная задача фронтенда - обеспечить удобство использования и эстетическую привлекательность.</p>
+                <video width="350" height="240" controls>
+                    <source src="assets/video/video1.mp4" type="video/mp4">
+                    Video not supported
+                </video>
+                <h4 class="backend" id="backend">Бэкенд</h4>
+                <p class="text-main">Бэкенд (или серверная часть). это "за кулисами" веб-приложения. Он отвечает за обработку данных, управление пользователями и взаимодействие с базами данных. Бэкенд разработчики используют языки программирования, такие как Python, Ruby, Java или РНР, а также фреймворки и базы данных для создания логики приложения. Основная задача бэкенда - обеспечить стабильную работу приложения и безопасность данных.</p>
+                <video width="350" height="240" controls>
+                    <source src="assets/video/video2.mp4" type="video/mp4">
+                    Video not supported
+                </video>
+                <br>
+            </div>
+            <a href="#top">
+                <img class="top" src="assets/top.png" alt="top">
+            </a>
         </main>
+        
     </div> 
-    <footer class="container6">
+    
+    <footer>
         <p class="footer-text foot-padding"> © Кушаева Варвара Антоновна</p>
         <a href="t.me/warja_k">
             <img class="footer-icon" src="assets/tg_icon.png" alt="tg icon">

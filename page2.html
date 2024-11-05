@@ -4,44 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Практика</title>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <header class="site-header">
         <div class="container1">
-            <div>
-                <img src="assets/logo.jpeg" style="width: 120px; height: auto;" alt="small cat in white">
-                <h5 style="margin-left: 25px; margin-top: 0px;">Logo</h5>
+            <div class="img-logo">
+                <img src="assets/logo.jpeg" alt="small cat in white">
+                <p>Logo</p>
             </div>
             <div class="container2">
-                <h5 style="text-align: right; margin-right: 20px; margin-top: 20px; margin-bottom: 0px;">Группа ЭФБО-01-23</h5>
-                <h5 style="text-align: right; margin-right: 20px;">Кушаева Варвара Антоновна</h5>
+                <p>Группа ЭФБО-01-23</p>
+                <p>Кушаева Варвара Антоновна</p>
             </div>
         </div>
         <div class="container3">
-            <a href="page1.html">
-                <h5 style="margin-left: 40px;">Главная</h5>
+            <a class="margin-nav1" href="page1.html">
+                <h5 class="hover navig margin-nav1">Главная</h5>
             </a>
             <a href="page3.html">
-                <h5>Первый семестр</h5> 
+                <h5 class="navig">Первый семестр</h5> 
             </a> 
-            <h5>Второй семестр</h5>
+            <h5 class="navig">Второй семестр</h5> 
             <a href="page2.html">
-                <h5>Услуги</h5>
+                <h5 class="navig">Услуги</h5> 
             </a>
-            <h5 style="margin-right: 40px;">Авторизация</h5>
+        
+            <h5 class="navig margin-nav2">Авторизация</h5> 
         </div>
     </header>
     <div class="container4" style="margin-top: 20px;">
-        <aside>
-            <p style="font-weight: bold; padding-bottom: 10px;">Навигация по&nbsp;странице</p>
-            <p>Фронтенд</p>
-            <p>Бэкенд</p>
-        </aside>
-
-        <main style="padding-left: 60px;">
-            <h1 style="font-family: 'Trebuchet MS'; padding-left: 120px; margin-bottom: 10px;">Разработка веб-приложений</h1>
+        <main>
+            <h1>Разработка веб-приложений</h1>
             <div class="grid-container">
                 <div class="item">
                     <img class="main-icon" src="assets/page23.jpeg" alt="discoball">
@@ -74,8 +69,10 @@
                     <button class="btn" type="button" data-service="online-store">Заказать</button>
                 </div>
             </div>
-            <p>В рамках спецификации современных стандартов, представители современных социальных резервов описаны максимально подробно. Есть над чем задуматься: стремящиеся вытеснить традиционное производство, нанотехнологии, превозмогая сложившуюся непростую экономическую ситуацию, ограничены исключительно образом мышления. А ещё многие известные личности, превозмогая сложившуюся непростую экономическую ситуацию, разоблачены. Имеется спорная точка зрения, гласящая примерно следующее: интерактивные прототипы, превозмогая сложившуюся непростую экономическую ситуацию, призваны к ответу. Повседневная практика показывает, что укрепление и развитие внутренней структуры, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для существующих финансовых и административных условий. В своём стремлении улучшить пользовательский опыт мы упускаем, что интерактивные прототипы являются только методом политического участия и разоблачены. Учитывая ключевые сценарии поведения, существующая теория не даёт нам иного выбора, кроме определения поэтапного и последовательного развития общества. А ещё интерактивные прототипы рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.</p>
-            
+            <p class="text-main">В рамках спецификации современных стандартов, представители современных социальных резервов описаны максимально подробно. Есть над чем задуматься: стремящиеся вытеснить традиционное производство, нанотехнологии, превозмогая сложившуюся непростую экономическую ситуацию, ограничены исключительно образом мышления. А ещё многие известные личности, превозмогая сложившуюся непростую экономическую ситуацию, разоблачены. Имеется спорная точка зрения, гласящая примерно следующее: интерактивные прототипы, превозмогая сложившуюся непростую экономическую ситуацию, призваны к ответу. Повседневная практика показывает, что укрепление и развитие внутренней структуры, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для существующих финансовых и административных условий. В своём стремлении улучшить пользовательский опыт мы упускаем, что интерактивные прототипы являются только методом политического участия и разоблачены. Учитывая ключевые сценарии поведения, существующая теория не даёт нам иного выбора, кроме определения поэтапного и последовательного развития общества. А ещё интерактивные прототипы рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.</p>
+            <a href="#top">
+                <img class="top" src="assets/top.png" alt="top">
+            </a>
         </main>
     </div>
     <footer class="container6">
@@ -88,8 +85,8 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <form id="contactForm" class="form">
-                <h4 style="font-size: 27px; text-align: center;">Разработка веб-приложений</h4>
-                <p style="margin-top: 0px; font-size: 20px; text-align: center; padding-left: 5px;">Заполните форму мы&nbsp;обязательно свяжемся с&nbsp;вами в&nbsp;ближайшее время для&nbsp;уточнение деталей</p>
+                <h4>Разработка веб-приложений</h4>
+                <p class="feedback">Заполните форму мы&nbsp;обязательно свяжемся с&nbsp;вами в&nbsp;ближайшее время для&nbsp;уточнение деталей</p>
                 <div class="form-item">
                     <label for="name">Как вас зовут</label>
                     <input type="text" id="name" name="name" placeholder="Иванов Иван Иванович" required>
@@ -135,9 +132,9 @@
                 <!-- hidden label -->
                 <input type="hidden" id="serviceType" name="serviceType">
 
-                <div style="margin-left: 20px;">
-                    <input type="checkbox" id="agree" style="width: 12px; height: 12px;">
-                    <label for="agree" style="font-size: 10px;">Согласен на обработку моих персональных данных</label>
+                <div class="agree">
+                    <input type="checkbox" id="agree" class="checkbox">
+                    <label for="agree">Согласен на обработку моих персональных данных</label>
                 </div>
 
                 <!-- submit button -->

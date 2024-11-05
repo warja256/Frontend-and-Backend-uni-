@@ -4,47 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Практика</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
 </head>
 <body>
     <header class="site-header">
         <div class="container1">
-            <div>
-                <img src="assets/logo.jpeg" style="width: 120px; height: auto;" alt="small cat in white">
-                <h5 style="font-size: 20px; margin-left: 30px; margin-top: 0px; font-family: 'Trebuchet MS'">Logo</h5>
+            <div class="img-logo">
+                <img src="assets/logo.jpeg" alt="small cat in white">
+                <p>Logo</p>
             </div>
             <div class="container2">
-                <h5 style="text-align: right; font-size: 20px;font-family: 'Trebuchet MS'; margin-right: 20px;margin-top: 20px;margin-bottom: 0px;border-bottom-width: 13px;">Группа ЭФБО-01-23</h5>
-                <h5 style="text-align: right; font-size: 20px; font-family: 'Trebuchet MS'; margin-right: 20px;">Кушаева Варвара Антоновна</h5>
+                <p>Группа ЭФБО-01-23</p>
+                <p>Кушаева Варвара Антоновна</p>
             </div>
         </div>
         <div class="container3">
-            <a href="page1.html">
-                <h5 style="margin-left: 40px;">Главная</h5>
+            <a class="margin-nav1" href="page1.html">
+                <h5 class="hover navig margin-nav1">Главная</h5>
             </a>
             <a href="page3.html">
-                <h5>Первый семестр</h5> 
+                <h5 class="navig">Первый семестр</h5> 
             </a> 
-            <h5>Второй семестр</h5>
+            <h5 class="navig">Второй семестр</h5> 
             <a href="page2.html">
-                <h5>Услуги</h5> 
-            </a> 
-            <h5 style="margin-right: 40px;">Авторизация</h5> 
+                <h5 class="navig">Услуги</h5> 
+            </a>
+        
+            <h5 class="navig margin-nav2">Авторизация</h5> 
         </div>
     </header>
     <div class="container7" style="margin-top: 20px;">
         <aside>
-            <p style="font-weight: bold; padding-bottom: 10px;">Навигация по&nbsp;странице</p>
-            <p>Лекции</p>
-            <p>Практики</p>
-            <p>Адрес вуза</p>
-            <p>Рабочая программа</p>
+            <p class="navigation">Навигация по&nbsp;странице</p>
+            <div class="option">
+                <a href="#lectures">
+                    <p>Лекции</p>
+                </a>
+                <a href="#seminars">
+                    <p>Практики</p>
+                </a>
+                <a href="#adress">
+                    <p>Адрес вуза</p>
+                </a>
+                <a href="workprogram">
+                    <p>Рабочая программа</p>
+                </a>
+            </div>
         </aside>
         
-        <main style="padding-left: 60px;">
+        <main>
             <div>
                 <h3>Первый семестр</h3>
-                <h5>Лекции</h5>
+                <h4 class="between-tables" id="lectures">Лекции</h4>
                 <table>
                     <thead>
                         <tr style="text-align: left;">
@@ -98,8 +109,8 @@
                     </tbody>
                 </table>
             </div>
-            <div>
-                <h5>Практики</h5>
+            <div class="between-tables">
+                <h4 id="seminars">Практики</h4>
                 <table>
                     <thead>
                         <tr style="text-align: left;">
@@ -210,14 +221,17 @@
                     </tbody>
                 </table>
             </div>
-            <p>Занятия проходят по адресу: Проспект Вернадсокого, 78</p>
+            <p id="adress">Занятия проходят по адресу: Проспект Вернадсокого, 78</p>
             <div class="con1">
                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A77d194a86785f6a6e82cc9c5aea6e0ac3463ce438855ebbfa024efbebf38f36b&amp;source=constructor" width="500" height="245" frameborder="0"></iframe>
                 <p>Рабочая программа</p>
-                <object data="assets/pdf/lectures_plan.pdf" type="application/pdf" width="500" height="300">
+                <object id="workprogram" data="assets/pdf/lectures_plan.pdf" type="application/pdf" width="500" height="300">
                     <p>Упс! Кажется, PDF-файл не отобразился.</p>
                 </object>
             </div>
+            <a href="#top">
+                <img class="top" src="assets/top.png" alt="top">
+            </a>
         </main>
     </div>
     
