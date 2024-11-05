@@ -1,0 +1,107 @@
+header img{
+    width: 120px;
+    height: auto;
+}
+header p {
+    font-family: 'Trebuchet MS';
+}
+.container1 {
+    display: grid;
+    grid-template: 1fr/ 1fr 5fr;
+    align-items: center;
+    justify-content: space-between;
+}
+.img-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px; 
+}
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: right; 
+    margin-right: 20px;
+}
+.container3 {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-image: url("assets/color4.jpg");
+    border-radius: 40px;
+    height: 80px;
+}
+h5:hover {
+    color: white;
+}
+h5:active {
+    color: darkred; 
+}
+.margin-nav1 {
+    padding-left: 30px;
+}
+.margin-nav2 {
+    padding-right: 30px;
+}
+@media (max-width: 768px) {
+    header img {
+        width: 20%;
+    }
+    .logo {
+        font-size: 0.8em;
+        padding-left: 0px;
+    }
+    .container2 h5 {
+        font-size: 0.8em !important;
+    }
+    .site-header {
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        top: 0;
+        background-color: white;
+    }
+    .container3 h5{
+        font-size: 0.6em !important;
+    }
+    .container3 {
+        display: grid;
+        grid-template: 1fr 1fr / 2.5fr 3fr 3fr;
+        gap: 6px;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.6em;
+    }
+    .span-header {
+        grid-row: 1 / span 2;
+    }
+    .margin-nav1 {
+        padding-left: 10px;
+        justify-self: center;
+    }    
+    .margin-nav2 {
+        padding-right: 10px;
+    }
+    header p {
+        font-size: 0.8em;
+    }
+    header img{
+        width: 50%;
+        height: auto;
+    }
+    .img-logo {
+        font-size: 0.8em;
+    }
+}
+@media ((min-width: 768px) and (max-width: 1024px)) {
+    .site-header {
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        top: 0;
+        background-color: white;
+    }
+}
