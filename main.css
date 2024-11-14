@@ -1,0 +1,462 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+main {
+    margin-top: 0; /* Убираем верхний отступ */
+    padding-top: 0; /* Убираем отступ сверху, если есть */
+}
+
+/* Убираем отступ сверху у footer */
+footer {
+    margin-top: 0;
+}
+body, .navbar, .main, footer {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    margin-top: 0;  /* Убираем верхний отступ */
+}
+html, body {
+    height: 100%; /* Устанавливаем высоту для html и body */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Устанавливаем флекс в колонку */
+}
+
+main {
+    flex-grow: 1; /* Заставляем main заполнять оставшееся пространство */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Можно добавить это для вертикального выравнивания содержимого */
+}
+aside {
+    flex-grow: 1; /* Заставляем aside заполнять оставшееся пространство в своей колонке */
+    padding: 10px; /* Паддинг для aside */
+    height: 100%;
+}
+.p-0 {
+    height: 100%;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+    padding: 10px 0; /* Можно изменить padding по необходимости */
+    background-color: #f8f9fa; /* Например, фон для футера */
+    height: 60px; /* Фиксированная высота футера */
+}
+
+.footer-text {
+    margin: 0;
+    padding-right: 5px;
+}
+
+.footer-icon {
+    width: auto;
+    height: 18px;
+}
+
+main {
+    background-color: #C0E0FF;
+    color: #253A82;
+}
+.navigation {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #E3FC87;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+}
+
+.option a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.option a:hover {
+    color: #E3FC87;
+}
+
+.option p {
+    margin: 0;
+}
+aside {
+    /* background-color: #DFAEA1; */
+    background-color: #88A2FF;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    color: #253A82;
+    padding-top: 10px;
+}
+.my-name {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.my-name img {
+    width: 180px;
+}
+.my-name h4 {
+    text-align: left;
+    font-family: 'Montserrat';
+    font-size: 28px;
+    font-weight: 500;
+}
+.carousel-item img {
+    height: 300px; /* Задайте фиксированную высоту */
+    object-fit: contain; /* Изображение сохраняет пропорции и помещается в контейнер */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main h4 {
+    text-align: justify;
+    font-family: 'Montserrat';
+}
+.accordion-body {
+    font-family: 'Montserrat';
+}
+.carousel {
+    width: 500px;
+}
+.navigation {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 24px;
+}
+
+.option a {
+    text-decoration: none;
+    color: inherit;
+}
+main h1 {
+    text-align: center;
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.gif-front-back {
+    width: 5%;
+    height: 5%;
+    border-radius: 90px;
+}
+.frontend {
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: "Press Start 2P";
+}
+.backend {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: "Press Start 2P";
+}
+.welcome {
+    padding-top: 30px;
+    font-family: "Press Start 2P";
+    font-weight: 900;
+}
+h2 {
+    margin: 0px;
+    font-family: "Press Start 2P";
+    height: 50px;
+}
+/* Отступ между элементами аккордеона */
+.accordion-item {
+    margin-bottom: 1rem; /* Регулируйте это значение для изменения расстояния */
+}
+
+/* Дополнительные отступы внутри содержимого аккордеона */
+.accordion-body {
+    padding: 1.5rem; /* Увеличиваем внутренние отступы */
+}
+.accordion-button  {
+    font-size: 20px;
+}
+.content-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    column-gap: 60px;
+    row-gap: 10px;
+}
+
+.frontend-img {
+    width: 100%;
+    height: 150px;
+    align-self: end;
+}
+
+.backend-container {
+    display: grid; /* Ensure container takes full height */
+}
+.backend-img {
+    width: 100%;
+    height: 150px;
+    align-self: end;
+}
+.frontend-p, .backend-p {
+    text-align: justify;
+    font-family: 'Cousine';
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.navigation {
+    font-family: "Press Start 2P";
+    font-size: 18px;
+}
+.option {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Press Start 2P';
+    font-size: 16px;
+    gap: 10px;
+    padding-left: 10px;
+}
+footer {
+    font-family: 'Cousine';
+}
+
+/* Убираем маргины и паддинги между элементами */
+
+@media (max-width: 768px) {
+    .navigation {
+        text-align: center;
+    }
+    .option {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 100px;
+    }
+    .my-name {
+        display: flex;
+        flex-direction: row;
+        margin: 20px 20px;
+    }
+    .my-name img {
+        width: 25%;
+    }
+    .my-name h4 {
+        text-align: left;
+        font-family: 'Cousine';
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .frontend-p, .backend-p {
+        font-size: 16px;
+    }
+    h2 {
+        margin-bottom: 15px;
+    }
+    .about {
+        display: none;
+    }
+    /* Основные стили для кнопки */
+    /* Основные стили для кнопки */
+    /* Основные стили для кнопки */
+    .navbar {
+        background-color: #253A82;
+        height: 150px;
+    }
+    .navbar-toggler {
+        height: 40px;
+        width: 60px;
+        border: none;
+        background-color: #E3FC87; /* Цвет фона кнопки */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-left: 10px;
+        border-radius: 0px;
+    }
+
+    .navbar-toggler-icon {
+        position: relative;
+        width: 24px; /* Ширина полоски */
+        height: 2px; /* Высота полоски */
+        background-color: #253A82; /* Цвет центральной полоски */
+        transition: transform 0.4s ease, background-color 0.4s ease;
+    }
+
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+        content: "";
+        position: absolute;
+        width: 24px; /* Ширина полоски */
+        height: 2px; /* Высота полоски */
+        background-color: #253A82; /* Цвет полосок */
+        transition: transform 0.4s ease, width 0.4s ease;
+    }
+
+    .navbar-toggler-icon::before {
+        top: -8px; /* Верхняя полоска чуть выше */
+    }
+
+    .navbar-toggler-icon::after {
+        top: 8px; /* Нижняя полоска чуть ниже */
+    }
+
+    /* Эффект при наведении */
+    .navbar-toggler:hover .navbar-toggler-icon {
+        background-color: transparent; /* Прячем центральную полоску */
+    }
+
+    .navbar-toggler:hover .navbar-toggler-icon::before {
+        transform: translateY(8px) rotate(45deg);
+        width: 28px; /* Увеличиваем ширину верхней полоски */
+    }
+
+    .navbar-toggler:hover .navbar-toggler-icon::after {
+        transform: translateY(-8px) rotate(-45deg);
+        width: 28px; /* Увеличиваем ширину нижней полоски */
+    }
+    .navbar-nav .nav-link {
+        font-size: 10px; /* Установите нужный размер шрифта */
+    }
+}
+@media (min-width: 768px) and (max-width: 1024.98px) {
+    .content-row {
+        display: none;
+    }
+    .frontend, .backend {
+        font-size: 18px;
+        text-align: center;
+    }
+    .frontend-p, .backend-p {
+        font-size: 16px;
+        padding: 0 15px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .container-fluid .row {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .navigation {
+        text-align: center;
+        font-size: 1.8em;
+    }
+    .option {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 100px;
+        font-size: 1.4em;
+    }
+    .my-name {
+        display: flex;
+        flex-direction: row;
+        margin: 20px 20px;
+    }
+    .my-name img {
+        width: 25%;
+    }
+    .my-name h4 {
+        text-align: left;
+        font-family: 'Cousine';
+        font-size: 1.8em;
+        font-weight: 500;
+    }
+    .frontend {
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+    .backend {
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+    .about {
+        display: none;
+    }
+    .navbar {
+        background-color: #253A82;
+        height: 150px;
+    }
+    .navbar-toggler {
+        height: 40px;
+        width: 60px;
+        border: none;
+        background-color: #E3FC87; /* Цвет фона кнопки */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 0px;
+    }
+
+    .navbar-toggler-icon {
+        position: relative;
+        width: 24px; /* Ширина полоски */
+        height: 2px; /* Высота полоски */
+        background-color: #253A82; /* Цвет центральной полоски */
+        transition: transform 0.4s ease, background-color 0.4s ease;
+    }
+
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+        content: "";
+        position: absolute;
+        width: 24px; /* Ширина полоски */
+        height: 2px; /* Высота полоски */
+        background-color: #253A82; /* Цвет полосок */
+        transition: transform 0.4s ease, width 0.4s ease;
+    }
+
+    .navbar-toggler-icon::before {
+        top: -8px; /* Верхняя полоска чуть выше */
+    }
+
+    .navbar-toggler-icon::after {
+        top: 8px; /* Нижняя полоска чуть ниже */
+    }
+
+    /* Эффект при наведении */
+    .navbar-toggler:hover .navbar-toggler-icon {
+        background-color: transparent; /* Прячем центральную полоску */
+    }
+
+    .navbar-toggler:hover .navbar-toggler-icon::before {
+        transform: translateY(8px) rotate(45deg);
+        width: 28px; /* Увеличиваем ширину верхней полоски */
+    }
+
+    .navbar-toggler:hover .navbar-toggler-icon::after {
+        transform: translateY(-8px) rotate(-45deg);
+        width: 28px; /* Увеличиваем ширину нижней полоски */
+    }
+}
+

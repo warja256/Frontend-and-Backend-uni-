@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/strawberry.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=DotGothic16&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"><link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Практика</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <!-- Кнопка бургер-меню для мобильных устройств -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="assets/png/logo.png" alt="alien" class="nav-logo">
+            <!-- Меню навигации -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-30">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link menu" href="page1.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu" href="#">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu" href="#">Авторизация</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">Семестры</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Первый семестр</a></li>
+                            <li><a class="dropdown-item" href="#">Второй семестр</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="about">
+                <p>Группа ЭФБО-01-23</p>
+                <p>Кушаева Варвара Антоновна</p>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="container-fluid">
+        <div class="row p-0">
+            <aside class="col-12 col-md-12 col-xl-2">
+                <p id="navigation" class="navigation">Навигация по&nbsp;странице</p>
+                <div class="option">
+                    <a href="#frontend"><p>Фронтенд</p></a>
+                    <a href="#backend"><p>Бэкенд</p></a>
+                </div>
+            </aside>
+            <div class="col-12 col-md-12 col-xl-10">
+                <h1 class="welcome text-center">Добро пожаловать на&nbsp;мой сайт</h1>
+                <div class=" d-flex flex-md-row align-items-center justify-content-center gap-4">
+                    <h4>Меня зовут Кушаева Варвара Антоновна и<br />
+                        я&nbsp;начинающий специалист по&nbsp;веб&nbsp;&mdash; разработке</h4>
+
+                    <div id="slider1" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/png/image.png" class=" mx-auto d-block w-50" alt="Slide 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/png/image1.png" class=" mx-auto d-block w-50" alt="Slide 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/png/image2.png" class="mx-auto d-block w-50" alt="Slide 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#slider1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#slider1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                        
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Фронтенд
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                            <div class="accordion-body">
+                                Фронтенд (или клиентская часть) — это то, что видит пользователь. Он включает в себя все визуальные элементы веб-сайта или приложения: кнопки, формы, изображения и текст. Фронтенд разработчики используют языки разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы создавать интерактивные и привлекательные интерфейсы. Основная задача фронтенда - обеспечить удобство использования и эстетическую привлекательность.
+                                <img class="img-fluid frontend-img" src="assets/gif/jellyfish.gif" alt="Frontend gif">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Бэкенд
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                            <div class="accordion-body">
+                                Бэкенд (или серверная часть) — это "за кулисами" веб-приложения. Он отвечает за обработку данных, управление пользователями и взаимодействие с базами данных. Бэкенд разработчики используют языки программирования, такие как Python, Ruby, Java или PHP, а также фреймворки и базы данных для создания логики приложения. Основная задача бэкенда - обеспечить стабильную работу приложения и безопасность данных.
+                                <img class="img-fluid backend-img" src="assets/gif/jellyfish.gif" alt="Backend gif">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="footer-text">© Кушаева Варвара Антоновна</p>
+        <a href="t.me/warja_k">
+            <img class="footer-icon" src="assets/tg_icon.png" alt="Telegram icon">
+        </a>
+    </footer>
+
+    <!-- Скрипты для работы Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBud5F8y4/NwSCwJDnKNR8aSJg==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

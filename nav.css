@@ -1,0 +1,148 @@
+/* Убираем отступы и границы */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+/* Стили для всей страницы */
+body, .navbar, footer {
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для navbar */
+.navbar {
+    background-color: #253A82;
+    height: auto; /* Высота теперь будет автоматически подстраиваться */
+    margin-bottom: 0;
+}
+
+.navbar .navbar-brand, .navbar-nav {
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для элементов меню */
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .dropdown-item {
+    color: #E3FC87;
+    font-size: 16px;
+    font-family: "Press Start 2P";
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+/* Стили для активных элементов */
+/* .active {
+    background-color: #E3FC87;
+    color: #253A82;
+} */
+
+.nav-item {
+    padding: 1px;
+}
+.nav-item {
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-item:hover {
+    border: 1px solid #E3FC87;
+    transform: translate(-4px, -4px); /* Двигаем элемент в левый верхний угол */
+    box-shadow: 12px 12px 0px 0px #E3FC87; /* Тень в правом нижнем углу */
+}
+
+
+/* Стили для выпадающего меню */
+.dropdown-item:hover {
+    background-color: #E3FC87;
+    color: #253A82;
+}
+
+/* Стили для navbar-nav, выравнивание по горизонтали */
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем перенос элементов */
+    gap: 30px;
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    width: 100%;
+    height: auto; /* Высота теперь адаптируется в зависимости от содержимого */
+}
+
+/* Описание поведения выпадающего меню */
+.dropdown-menu {
+    display: none;
+    background-color: #253A82;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.navbar-toggler:focus {
+    outline: none; /* Убираем стандартную обводку */
+    box-shadow: none; /* Убираем эффект тени */
+    padding: 10px 0px;
+}
+/* Стили для иконки и текста в navbar */
+nav img {
+    width: 5%;
+    height: 5%;
+    border: 0px;
+}
+
+/* Стили для оцифровки navbar */
+nav {
+    color: #E3FC87;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+/* Стили для блока about */
+.about {
+    font-size: 14px;
+    text-align: right;
+    font-family: 'Montserrat';
+}
+
+/* Мобильная версия (до 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        height: auto; /* Высота адаптируется */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Переводим меню в колонку */
+        width: 100%;
+        align-items: center; /* Выравнивание элементов по центру */
+        padding-top: 20px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px; /* Уменьшение размера шрифта */
+    }
+
+    .nav-logo {
+        display: none; 
+    }
+}
+
+/* Планшеты (от 768px до 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        background-color: #253A82;
+        height: auto; /* Высота адаптируется */
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-logo {
+        display: none;
+    }
+}

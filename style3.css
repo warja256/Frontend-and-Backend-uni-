@@ -40,17 +40,6 @@ main {
     align-items: center;
     flex-direction: row;
 }
-.footer-text {
-    font-family: 'Trebuchet MS';
-    margin-left: 550px;
-    margin-right: 20px;
-
-}
-.footer-icon {
-
-    width: auto;
-    height: 20px;
-}
 .main-icon {
     width: auto;
     height: 50px;

@@ -1,0 +1,18 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+}
+.footer-icon {
+    width: auto;
+    height: 18px;
+    align-items: center;
+}
+.footer-text {
+    text-align: center;
+    margin: 0px;
+    padding-right: 5px;
+}

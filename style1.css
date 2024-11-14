@@ -43,20 +43,6 @@ main {
     font-size: 20px;
     padding-left: 60px;
 }
-footer {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-}
-/* ИСПРАВИТЬ!!! */
-.footer-text {
-    margin-left: 550px;
-    margin-right: 20px;
-}
-.footer-icon {
-    width: auto;
-    height: 20px;
-}
 .main-icon {
     width: auto;
     height: 50px;
@@ -66,10 +52,6 @@ footer {
 aside p{
     padding-bottom: 5px;
 }
-.foot-padding {
-    margin-top: 5px;
-}
-
 main h4 {
     padding-bottom: 10px;
 }

@@ -46,15 +46,6 @@ main {
     flex-direction: row;
     padding-top: 20px;
 }
-.footer-text {
-    font-family: 'Trebuchet MS';
-    margin-left: 550px;
-    margin-right: 20px;
-}
-.footer-icon {
-    width: auto;
-    height: 20px;
-}
 .con1 {
     display: flex;
     align-items: center;
