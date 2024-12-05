@@ -6,72 +6,85 @@
     <title>Практика</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=DotGothic16&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"><link rel="stylesheet" href="main.css">
+    
     <link rel="shortcut icon" href="assets/strawberry.png">
     <script src="script.js" defer></script>
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <header class="site-header">
-        <div class="container1">
-            <div class="img-logo">
-                <img src="assets/logo.jpeg" alt="small cat in white">
-                <p>Logo</p>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <!-- Кнопка бургер-меню для мобильных устройств -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="assets/png/logo.png" alt="alien" class="img nav-logo">
+            <!-- Меню навигации -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-30">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link menu" href="main_page.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu" href="page2.html">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu" href="#">Авторизация</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">Семестры</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="page3.html">Первый семестр</a></li>
+                            <li><a class="dropdown-item" href="#">Второй семестр</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
             </div>
-            <div class="container2">
+            <div class="about">
                 <p>Группа ЭФБО-01-23</p>
                 <p>Кушаева Варвара Антоновна</p>
             </div>
         </div>
-        <div class="container3">
-            <a class="span-header" href="page1.html">
-                <h5 class="hover margin-nav1">Главная</h5>
-            </a>
-            <a href="page3.html">
-                <h5>Первый семестр</h5> 
-            </a> 
-            <a href="second_semestr.html">
-                <h5>Второй семестр</h5> 
-            </a> 
-            <a href="page2.html">
-                <h5>Услуги</h5> 
-            </a>
-        
-            <h5 class="margin-nav2">Авторизация</h5> 
-        </div>
-    </header>
+    </nav>
     <div class="container4" style="margin-top: 20px;">
         <main>
-            <h1>Разработка веб-приложений</h1>
+            <h1 class="title">Разработка веб-приложений</h1>
             <div class="grid-container">
                 <div class="item">
-                    <img class="main-icon" src="assets/page23.jpeg" alt="discoball">
+                    <img class="main-icon" src="assets/png/image copy 2.png" alt="discoball">
                     <p>Сайт-визитка</p>
                     <button class="btn" type="button" data-service="site-visiting-card">Заказать</button>
                 </div>
                 <div class="item">
-                    <img class="main-icon" src="assets/page22.jpeg" alt="pink flower">
+                    <img class="main-icon" src="assets/png/image copy 3.png" alt="pink flower">
                     <p>Корпоративный сайт</p>
                     <button class="btn" type="button" data-service="corporate-site">Заказать</button>
                 </div>
                 <div class="item">
-                    <img class="main-icon" src="assets/page21.jpeg" alt="strawberries">
+                    <img class="main-icon" src="assets/png/image copy 4.png" alt="strawberries">
                     <p>Интернет магазин</p>
                     <button class="btn" type="button" data-service="online-store">Заказать</button>
                 </div>
                 <div class="item between-rows">
-                    <img class="main-icon" src="assets/page23.jpeg" alt="discoball">
+                    <img class="main-icon" src="assets/png/image copy 2.png" alt="discoball">
                     <p>Сайт-визитка</p>
                     <button class="btn" type="button" data-service="site-visiting-card">Заказать</button>
                 </div>
                 <div class="item between-rows">
-                    <img class="main-icon" src="assets/page22.jpeg" alt="pink flower">
+                    <img class="main-icon" src="assets/png/image copy 3.png" alt="pink flower">
                     <p>Корпоративный сайт</p>
                     <button class="btn" type="button" data-service="corporate-site">Заказать</button>
                 </div>
                 <div class="item between-rows">
-                    <img class="main-icon" src="assets/page21.jpeg" alt="strawberries">
+                    <img class="main-icon" src="assets/png/image copy 4.png" alt="strawberries">
                     <p>Интернет магазин</p>
                     <button class="btn" type="button" data-service="online-store">Заказать</button>
                 </div>

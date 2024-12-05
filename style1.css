@@ -29,6 +29,7 @@ a, a:link, a:visited  {
 h5 {
     font-size: 20px;
     font-family: 'Trebuchet MS';
+    margin-bottom: 0;
 }
 aside {
     font-size: 20px; 
@@ -39,7 +40,7 @@ aside {
     padding-top: 10px;
 }
 main {
-    font-family: 'Trebuchet MS';
+    font-family: 'Montserrat';
     font-size: 20px;
     padding-left: 60px;
 }

@@ -2,14 +2,60 @@
     padding: 0px;
     margin: 0px;
     border: none;
-  }
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+nav {
+    margin: 0;
+    padding: 0;
+}
+main {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.container4 {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+.navbar-nav {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%; /* Устанавливаем высоту для html и body */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Устанавливаем флекс в колонку */
+}
+
+main {
+    flex-grow: 1; /* Заставляем main заполнять оставшееся пространство */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Можно добавить это для вертикального выравнивания содержимого */
+    background-color: #CFE2FF;
+}
+
+main {
+    margin-top: 0; /* Убираем верхний отступ */
+    padding-top: 0; /* Убираем отступ сверху, если есть */
+}
 
 a, a:link, a:visited  {
     text-decoration: none;
     color: inherit;
 }
 body {
-    font-family: 'Trebuchet MS';
+    font-family: 'Montserrat';
 }
 aside {
     font-size: 20px; 
@@ -34,11 +80,11 @@ aside {
 h5 {
     font-size: 20px;
     font-family: 'Trebuchet MS';
+    margin-bottom: 0;
 }
 main {
     font-family: 'Trebuchet MS';
     font-size: 20px;
-    padding-left: 60px;
 }
 .container6 {
     display: flex;
@@ -71,21 +117,20 @@ main button {
     margin-top: 3px;
 }
 main p {
-    margin-top: 10px;
+    margin-top: 3px;
 }
 .main-icon {
     width: auto;
-    height: 350px;
+    height: 200px;
     transition: transform 1s;
     padding: 1px;
 }
 
 .main-icon:hover {
-    border: 1px solid #c272a5;
-    border-radius: 180px;
-    box-shadow: 2px 1px 5px #bf8db7;
-    padding: 0px;
+    opacity: 0.7; /* Уменьшает непрозрачность */
+    filter: grayscale(100%); /* Применяет серый оттенок */
 }
+
 .con2 {
     display: flex;
     align-items: center;
@@ -95,19 +140,28 @@ main p {
 .btn {
     width: 120px;
     height: 40px;
-    font-family: 'Trebuchet MS';
+    font-family: 'Montserrat';
     text-align: center;
-    background-image: url("assets/color1.jpg");
+    background-color: #253A82;
+    color: #E3FC87;;
     background-size: 150px 45px;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 40px;
+    border-radius: 0px;
     border: 0px;
     font-size: 18px;
 }
 .btn:hover {
-    font-size: 22px;
-    background-image: url("assets/color4.jpg");
+    border: 1px solid #E3FC87;
+    box-shadow: 0px 0px 15px 5px rgba(227, 252, 135, 0.7); /* Мягкая подсветка */
+    background-color: #253A82;
+    color: #E3FC87;
+    transform: scale(1.1); /* Увеличивает кнопку */
+    transition: all 0.3s ease; /* Плавное изменение */
+}
+
+.text-main {
+    font-family: 'Montserrat';
 }
 .modal {
     display: none; /* Скрываем модальное окно по умолчанию */
@@ -161,7 +215,6 @@ main p {
     padding: 10px 20px;
     border-radius: 30px;
     cursor: pointer;
-    font-weight: 800;
     justify-content: center;
 }
 
@@ -199,6 +252,12 @@ main h1 {
 }
 .item p {
     padding-bottom: 5px;
+    font-family: 'Montserrat';
+
+
+}
+p {
+    margin-bottom: 3px;
 }
 .agree {
     margin-left: 20px;
@@ -231,6 +290,13 @@ form h4 {
 }
 .top {
     display: none;
+}
+
+.title {
+    font-family: "Press Start 2P";
+    font-size: 40px;
+    margin-bottom: 50px;
+    padding: 0px;
 }
 @media (max-width: 768px){
     .container4 {
@@ -288,7 +354,7 @@ form h4 {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         justify-content: space-between;
-        gap: 10px;
+        gap: 60px;
     }
     .main-icon {
         width: 100%;

@@ -70,9 +70,6 @@ main {
 .navigation {
     font-weight: bold;
     margin-bottom: 1rem;
-    border-bottom: 2px solid #E3FC87;
-    /* padding-left: 10px;
-    padding-right: 10px; */
 }
 
 .option a {
