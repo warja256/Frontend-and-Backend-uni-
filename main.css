@@ -246,6 +246,9 @@ footer {
 /* Убираем маргины и паддинги между элементами */
 
 @media (max-width: 768px) {
+    .title {
+        font-size: 22px;
+    }
     .navigation {
         text-align: center;
     }
