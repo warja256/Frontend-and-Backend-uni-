@@ -107,6 +107,25 @@ nav {
     text-align: right;
     font-family: 'Montserrat';
 }
+h1 {
+    transition: transform 0.s ease;
+}
+
+h1:hover {
+    transform: scale(1.09); 
+}
+p {
+    transition: background-color 0.2s ease;
+}
+
+#slider1 .carousel-item img {
+    transition: transform 0.3s ease;
+}
+
+#slider1 .carousel-item img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
 
 /* Мобильная версия (до 768px) */
 @media (max-width: 768px) {

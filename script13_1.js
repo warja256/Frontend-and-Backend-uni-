@@ -1,4 +1,4 @@
-
+// script13_1.js
 document.getElementById('toggleSemesterButton').addEventListener('click', function() {
     const secondSemesterPractices = [
         "Базовое бэкенд-приложение",
@@ -34,4 +34,15 @@ document.getElementById('toggleSemesterButton').addEventListener('click', functi
     });
 
     document.getElementById('semesterTitle').textContent = 'Второй семестр';
+});
+
+document.getElementById('showLecturesButton').addEventListener('click', function() {
+    const lecturesContainer = document.getElementById('lecturesContainer');
+    if (lecturesContainer.classList.contains('hidden')) {
+        lecturesContainer.classList.remove('hidden');
+        lecturesContainer.classList.add('visible');
+    } else {
+        lecturesContainer.classList.remove('visible');
+        lecturesContainer.classList.add('hidden');
+    }
 });

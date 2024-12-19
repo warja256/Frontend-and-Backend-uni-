@@ -243,6 +243,19 @@ footer {
     font-family: 'Cousine';
 }
 
+/* style3.css */
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.visible {
+    display: block;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
 /* Убираем маргины и паддинги между элементами */
 
 @media (max-width: 768px) {

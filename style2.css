@@ -301,6 +301,19 @@ form h4 {
     opacity: 0.7; /* Уменьшает непрозрачность */
     filter: grayscale(100%); /* Применяет серый оттенок */
 }
+/* style2.css */
+.success-message {
+    display: none;
+    color: green;
+    animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+    0% { color: green; }
+    50% { color: blue; }
+    100% { color: green; }
+}
+
 
 @media (max-width: 768px) {
     .between-rows {

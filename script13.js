@@ -8,21 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var carouselImages = document.querySelectorAll('#slider1 .carousel-item img');
     carouselImages.forEach(function(img) {
-        img.addEventListener('mouseover', function() {
-            img.style.transform = 'scale(1.1)'; 
-            img.style.transition = 'transform 0.3s'; 
-        });
-
-        img.addEventListener('mouseout', function() {
-            img.style.transform = 'scale(1)'; 
-            img.style.transition = 'transform 0.3s'; 
-        });
-
         img.addEventListener('click', function() {
             const teacherImages = [
-                'assets/png/teacher.png', 
-                'assets/png/teacher.png', 
-                'assets/png/teacher.png'  
+                'assets/png/teacher.png',
+                'assets/png/teacher.png',
+                'assets/png/teacher.png'
             ];
 
             const randomIndex = Math.floor(Math.random() * teacherImages.length);
@@ -31,6 +21,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
         img.addEventListener('dblclick', function() {
             alert('Не налегай, у меня не так много любимых преподавателей');
+        });
+    });
+
+    var paragraphs = document.querySelectorAll('p');
+    paragraphs.forEach(function(paragraph) {
+        paragraph.addEventListener('click', function() {
+            paragraph.style.backgroundColor = paragraph.style.backgroundColor === '#E3FC87' ? '' : '#E3FC87';
         });
     });
 });
